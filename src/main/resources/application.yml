@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_test?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: root
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 6
+    timeout: 1000
+  cache:
+    type: redis
+    redis:
+      time-to-live: 100000
+      use-key-prefix: true
+      cache-null-values: false
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+server:
+  port: 8085
+
+
