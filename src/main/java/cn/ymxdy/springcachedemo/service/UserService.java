@@ -41,4 +41,11 @@ public interface UserService extends IService<UserEntity> {
      */
     UserEntity getById(String id);
 
+
+    /**
+     * 查询所有的接口
+     *
+     * @return
+     */
+    List<UserEntity> findAll();
 }

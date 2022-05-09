@@ -37,7 +37,13 @@ public class UserController {
     @GetMapping("/{id}")
     public UserEntity getById(@PathVariable String id) {
         UserEntity entity = userService.getById(id);
-        return  entity;
+        return entity;
+    }
+
+    @GetMapping("/findall")
+    public List findAll() {
+        List<UserEntity> all = userService.findAll();
+        return all;
     }
 
 }

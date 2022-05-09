@@ -1,5 +1,6 @@
 package cn.ymxdy.springcachedemo.service.impl;
 
+import cn.ymxdy.springcachedemo.aspect.annotation.WebLog;
 import cn.ymxdy.springcachedemo.constant.CacheConstant;
 import cn.ymxdy.springcachedemo.dao.UserMapper;
 import cn.ymxdy.springcachedemo.entity.UserEntity;
@@ -28,7 +29,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
     }
 
     @Override
-    @CachePut(cacheNames = {"user"}, key = "#user.id",unless = "#result==null") //写入缓存，key为user.id,一般该注解标注在新增方法上
+    @CachePut(cacheNames = {"user"}, key = "#user.id", unless = "#result==null") //写入缓存，key为user.id,一般该注解标注在新增方法上
     public void addUser(UserEntity user) {
         this.baseMapper.insert(user);
 
@@ -41,11 +42,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
     }
 
     @Override
-    @Cacheable(cacheNames = {"user"}, key = "#id",unless = "#result==null")//如果缓存存在，直接读取缓存值；如果缓存不存在，则调用目标方法，并将结果放入缓存
+    @Cacheable(cacheNames = {"user"}, key = "#id", unless = "#result==null")//如果缓存存在，直接读取缓存值；如果缓存不存在，则调用目标方法，并将结果放入缓存
     public UserEntity getById(String id) {
         System.out.println("缓存不存在");
         UserEntity userEntity = this.baseMapper.selectById(id);
         return userEntity;
+    }
 
+    @Override
+    @WebLog
+    public List<UserEntity> findAll() {
+        return this.baseMapper.selectList(null);
     }
 }
