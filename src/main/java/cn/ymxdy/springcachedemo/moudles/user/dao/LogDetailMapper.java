@@ -1,6 +1,6 @@
-package cn.ymxdy.springcachedemo.dao;
+package cn.ymxdy.springcachedemo.moudles.user.dao;
 
-import cn.ymxdy.springcachedemo.entity.LogDetail;
+import cn.ymxdy.springcachedemo.moudles.user.entity.LogDetail;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

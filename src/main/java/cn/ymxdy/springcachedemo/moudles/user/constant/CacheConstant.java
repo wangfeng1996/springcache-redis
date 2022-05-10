@@ -1,4 +1,4 @@
-package cn.ymxdy.springcachedemo.constant;
+package cn.ymxdy.springcachedemo.moudles.user.constant;
 
 /**
  * @author wf

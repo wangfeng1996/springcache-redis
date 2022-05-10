@@ -1,6 +1,6 @@
-package cn.ymxdy.springcachedemo.service;
+package cn.ymxdy.springcachedemo.moudles.user.service;
 
-import cn.ymxdy.springcachedemo.entity.UserEntity;
+import cn.ymxdy.springcachedemo.moudles.user.entity.UserEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

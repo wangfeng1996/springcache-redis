@@ -1,7 +1,7 @@
-package cn.ymxdy.springcachedemo.aspect;
+package cn.ymxdy.springcachedemo.common.aspect;
 
-import cn.ymxdy.springcachedemo.dao.LogDetailMapper;
-import cn.ymxdy.springcachedemo.entity.LogDetail;
+import cn.ymxdy.springcachedemo.moudles.user.dao.LogDetailMapper;
+import cn.ymxdy.springcachedemo.moudles.user.entity.LogDetail;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -31,7 +31,7 @@ public class AutoLogAspect {
     /**
      * 将自定义注解的@webLog注解作为切点
      */
-    @Pointcut("@annotation(cn.ymxdy.springcachedemo.aspect.annotation.WebLog)")
+    @Pointcut("@annotation(cn.ymxdy.springcachedemo.common.aspect.annotation.WebLog)")
     public void webLog() {
     }
 

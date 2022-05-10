@@ -1,4 +1,4 @@
-package cn.ymxdy.springcachedemo.config;
+package cn.ymxdy.springcachedemo.common.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

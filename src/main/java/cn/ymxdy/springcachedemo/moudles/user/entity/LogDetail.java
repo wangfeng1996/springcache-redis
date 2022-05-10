@@ -1,4 +1,4 @@
-package cn.ymxdy.springcachedemo.entity;
+package cn.ymxdy.springcachedemo.moudles.user.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

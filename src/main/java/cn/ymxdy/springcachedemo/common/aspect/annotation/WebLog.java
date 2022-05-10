@@ -1,4 +1,4 @@
-package cn.ymxdy.springcachedemo.aspect.annotation;
+package cn.ymxdy.springcachedemo.common.aspect.annotation;
 
 import java.lang.annotation.*;
 

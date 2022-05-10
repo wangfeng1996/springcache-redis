@@ -1,7 +1,7 @@
-package cn.ymxdy.springcachedemo.controller;
+package cn.ymxdy.springcachedemo.moudles.user.controller;
 
-import cn.ymxdy.springcachedemo.entity.UserEntity;
-import cn.ymxdy.springcachedemo.service.UserService;
+import cn.ymxdy.springcachedemo.moudles.user.entity.UserEntity;
+import cn.ymxdy.springcachedemo.moudles.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

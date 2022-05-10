@@ -1,10 +1,10 @@
-package cn.ymxdy.springcachedemo.service.impl;
+package cn.ymxdy.springcachedemo.moudles.user.service.impl;
 
-import cn.ymxdy.springcachedemo.aspect.annotation.WebLog;
-import cn.ymxdy.springcachedemo.constant.CacheConstant;
-import cn.ymxdy.springcachedemo.dao.UserMapper;
-import cn.ymxdy.springcachedemo.entity.UserEntity;
-import cn.ymxdy.springcachedemo.service.UserService;
+import cn.ymxdy.springcachedemo.common.aspect.annotation.WebLog;
+import cn.ymxdy.springcachedemo.moudles.user.constant.CacheConstant;
+import cn.ymxdy.springcachedemo.moudles.user.dao.UserMapper;
+import cn.ymxdy.springcachedemo.moudles.user.entity.UserEntity;
+import cn.ymxdy.springcachedemo.moudles.user.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;

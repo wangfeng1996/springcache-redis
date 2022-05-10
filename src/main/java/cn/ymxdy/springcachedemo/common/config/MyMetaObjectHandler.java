@@ -1,4 +1,4 @@
-package cn.ymxdy.springcachedemo.config;
+package cn.ymxdy.springcachedemo.common.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import lombok.extern.slf4j.Slf4j;
